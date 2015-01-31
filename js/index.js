@@ -8,7 +8,7 @@ $( document ).ready( function () {
 
     function transitionTo ( name ) {
         if ( name === currentTab ) {
-            return;
+            return false;
         }
 
         $( 'body' ).animate( {
@@ -16,8 +16,7 @@ $( document ).ready( function () {
         }, 200 );
 
         $( '.tabs a.active' ).removeClass( 'active' );
-        $( '.tabs a[href="#' + name + '"]' ).addClass( 'active' );
-        window.location.hash = '#' + name;
+        $( '.tabs a[href="#/' + name + '"]' ).addClass( 'active' );
 
         if ( $content.children( '.active' ).length ) {
             $content.children( '.active' ).removeClass( 'active' ).fadeOut( 'fast', function () {
@@ -29,11 +28,11 @@ $( document ).ready( function () {
     }
 
     if ( !window.location.hash ) {
-        window.location.hash = '#home';
+        window.location.hash = '#/home';
     }
 
     function hashChange () {
-        transitionTo( window.location.hash.substring( 1 ) );
+        transitionTo( window.location.hash.substring( 2 ) );
     }
 
     $( window ).on( 'hashchange', hashChange );
