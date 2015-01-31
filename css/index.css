@@ -30,7 +30,7 @@ p {
 }
 
 .hero .container .tagline {
-    font-size: 2rem;
+    font-size: 9.5vw;
 }
 
 .hero .container .tagline span {
@@ -38,7 +38,7 @@ p {
 }
 
 .hero .container .sub-tagline {
-    font-size: 1rem;
+    font-size: 3.5vw;
 }
 
 .tabber .tabs {
@@ -67,21 +67,6 @@ p {
     margin: auto;
 }
 
-.rssFeed ul {
-    list-style: none;
-}
-
-.rssFeed h4 {
-    margin-bottom: 0;
-    font-size: 2.5rem;
-}
-
-.rssFeed .rssRow div {
-    color: gray;
-    font-size: 1.3rem;
-    margin-bottom: 0.6rem;
-}
-
 .wrapper {
     width: 100%;
     min-height: 100%;
@@ -101,6 +86,11 @@ p {
     display: none;
 }
 
+.fb-like-box, .fb-like-box span, .fb-like-box iframe {
+    width: 100% !important;
+    height: 400px !important;
+}
+
 .footer, .wrapper:after {
     height: 35px; 
 }
@@ -117,11 +107,15 @@ p {
     }
 
     .hero .container .tagline {
-        font-size: 4rem;
+        font-size: 8vw;
+    }
+
+    .hero .container .tagline span {
+        font-weight: bold;
     }
 
     .hero .container .sub-tagline {
-        font-size: 1.7rem;
+        font-size: 2.7vw;
     }
 }
 
@@ -129,14 +123,6 @@ p {
     .hero {
         height: 460px;
         background-attachment: fixed;
-    }
-
-    .hero .container .tagline {
-        font-size: 8rem;
-    }
-
-    .hero .container .sub-tagline {
-        font-size: 3rem;
     }
 
     .tabber {

@@ -3,19 +3,6 @@ $( document ).ready( function () {
 } );
 
 $( document ).ready( function () {
-    $( '#feed' ).rssfeed( 'https://wshsrobots.wix.com/whitestationrobotics/feed.xml', {
-        header: false,
-        media: true,
-        snippet: false,
-        showerror: true
-    }, function () {
-        $( '#feed' ).find( 'a' ).each( function () {
-            $( this ).replaceWith( $( this ).text() );
-        } );
-    } );
-} );
-
-$( document ).ready( function () {
     var currentTab = null,
         $content = $( '.content' );
 
@@ -29,8 +16,8 @@ $( document ).ready( function () {
         }, 200 );
 
         $( '.tabs a.active' ).removeClass( 'active' );
-        $( '.tabs a[href="#/' + name + '"]' ).addClass( 'active' );
-        window.location.hash = '#/' + name;
+        $( '.tabs a[href="#' + name + '"]' ).addClass( 'active' );
+        window.location.hash = '#' + name;
 
         if ( $content.children( '.active' ).length ) {
             $content.children( '.active' ).removeClass( 'active' ).fadeOut( 'fast', function () {
@@ -42,11 +29,11 @@ $( document ).ready( function () {
     }
 
     if ( !window.location.hash ) {
-        window.location.hash = '#/home';
+        window.location.hash = '#home';
     }
 
     function hashChange () {
-        transitionTo( window.location.hash.substring( 2 ) );
+        transitionTo( window.location.hash.substring( 1 ) );
     }
 
     $( window ).on( 'hashchange', hashChange );

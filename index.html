@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=350846308434598&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div class="wrapper">
     <div class="section hero">
       <div class="container">
@@ -21,10 +30,10 @@
     </div>
     <div class="section tabber">
       <div class="tabs">
-        <a class="button" href="#/home">Home</a>
-        <a class="button" href="#/status">What we're up to</a>
-        <a class="button" href="#/sponsors">Sponsors</a>
-        <a class="button" href="#/contact">Get in touch</a>
+        <a class="button" href="#home">Home</a>
+        <a class="button" href="#status">What we're up to</a>
+        <a class="button" href="#sponsors">Sponsors</a>
+        <a class="button" href="#contact">Get in touch</a>
       </div>
     </div>
     <div class="section content">
@@ -39,14 +48,14 @@
 
       <div id="status">
         <div class="container">
-          <div id="feed">Loading status updates...</div>
+          <div class="fb-like-box" data-href="https://www.facebook.com/wshsrobotics" data-width="500" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
         </div>
       </div>
 
       <div id="sponsors">
         <div class="container">
           <h3><span>Building world-class robots isn't easy, nor is it inexpensive.</span> <span>Our sponsors make everything possible.</span></h3>
-          <p>Interested in helping to fund the next generation of leaders & problem solvers? A variety of sponsorship levels are available&mdash;please <a href="#/contact">contact&nbsp;us</a> for more information.</p>
+          <p>Interested in helping to fund the next generation of leaders & problem solvers? A variety of sponsorship levels are available&mdash;please <a href="#contact">contact&nbsp;us</a> for more information.</p>
           <hr>
           <div class="row">
             <div class="one-half column">
@@ -75,7 +84,6 @@
     Copyright <span id="year">2015</span> by Team 5045. All rights reserved.
   </div>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/jquery.zrssfeed.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
