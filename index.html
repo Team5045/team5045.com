@@ -4,119 +4,104 @@
   Website by Theo Patt
   https://theopatt.com
 -->
-
 <head>
-    <title>Team 5045 | White Station High School Robotics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+  <title>Team 5045 | White Station High School Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/skeleton.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
 </head>
-
 <body>
-    <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=350846308434598&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=350846308434598&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="wrapper">
-        <div class="section hero">
-            <div class="container">
-                <div class="tagline">We are <span>Team 5045</span>.</div>
-                <div class="sub-tagline">White Station High School | Memphis, Tennessee</div>
-            </div>
+  <div class="wrapper">
+    <div class="section hero">
+      <div class="container">
+        <div class="tagline">We are <span>Team 5045</span>.</div>
+        <div class="sub-tagline">White Station High School | Memphis, Tennessee</div>
+      </div>
+    </div>
+    <div class="section tabber">
+      <div class="tabs">
+        <a class="button" href="#/home">Home</a>
+        <a class="button" href="#/status">What we're up to</a>
+        <a class="button" href="#/sponsors">Sponsors</a>
+        <a class="button" href="#/contact">Contacts</a>
+        <a class="button" href="#/resources">Calendar</a>
+      </div>
+    </div>
+    <div class="section content">
+
+      <div id="home">
+        <div class="container">
+          <h3>We make robots.</h3>
+          <p><a href="http://usfirst.org">FIRST</a> is an international organization that uses competitive robotics as a vehicle for promoting science &amp; technology, allowing high school students to work side by side with professional mentors to learn skills ranging from engineering to marketing, animation and business.</p>
+          <p>The White Station Robotics Team inspires and enourages our students to do great things. Whether they're in marketing, programming, design, or the build team, every student has a part to play in the success of the team.</p>
         </div>
-        <div class="section tabber">
-            <div class="tabs">
-                <a class="button" href="#/home">Home</a>
-                <a class="button" href="#/status">What we're up to</a>
-                <a class="button" href="#/sponsors">Sponsors</a>
-                <a class="button" href="#/contact">Contacts</a>
-                <a class="button" href="#/resources">Calendar</a>
-                <a class="button" href="#/gallery">Photos</a>
-            </div>
+      </div>
+
+      <div id="status">
+        <div class="container">
+          <h3>Blog</h3>
+          <div class="fb-like-box" data-href="https://www.facebook.com/wshsrobotics" data-width="500" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
         </div>
-        <div class="section content">
+      </div>
 
-            <div id="home">
-                <div class="container">
-                    <h3>We make robots.</h3>
-                    <p><a href="http://usfirst.org">FIRST</a> is an international organization that uses competitive robotics as a vehicle for promoting science &amp; technology, allowing high school students to work side by side with professional mentors to learn skills ranging from engineering to marketing, animation and business.</p>
-                    <p>The White Station Robotics Team inspires and enourages our students to do great things. Whether they're in marketing, programming, design, or the build team, every student has a part to play in the success of the team.</p>
-                </div>
+      <div id="sponsors">
+        <div class="container">
+          <h3><span>Building world-class robots isn't easy, nor is it inexpensive.</span> <span>Our sponsors make everything possible.</span></h3>
+          <p>Interested in helping to fund the next generation of leaders and problem solvers? A variety of sponsorship levels are available&mdash;please <a href="#/contact">contact&nbsp;us</a> for more information.</p>
+          <hr>
+          <div class="row">
+            <div class="one-half column">
+              <img class="u-max-full-width" src="img/qif.jpg">
+              <p>Our dedication to personal service remains the cornerstone of our business philosophy as we deliver multi-faceted service to our customers. With the continued modernization of equipment, efficient fabrication processes, a capable and dedicated workforce and sound business practices, Quality Iron Fabricators stands poised to meet any needs our customers may have today and tomorrow.</p>
             </div>
-
-            <div id="status">
-                <div class="container">
-                    <h3>Blog</h3>
-                    <div class="fb-like-box" data-href="https://www.facebook.com/wshsrobotics" data-width="500" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
-                </div>
+            <div class="one-half column">
+              <img class="u-max-full-width" src="img/swe.jpg">
+              <p>For more than six decades, the Society of Woman Engineers has given women engineers a unique place and voice within the engineering industry. Our organization is centered around a passion for our members' success and continues to evolve with the challenges and opportunities reflected in today's exciting engineering and technology specialties.</p>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="one-half column">
+              <img class="u-max-full-width" src="img/scs.jpg">
+              <p>Shelby County Schools—one of the 25 largest school districts in the nation—is located in Memphis, TN. We’re known for our great food, original music, professional sports, and high-quality arts in the most affordable urban setting in the nation. Not only that, but Memphis is a hotbed and national leader for groundbreaking work in public education and innovation.</p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div id="gallery">
-                <iframe src="http://embedsocial.com/facebook_album/album_photos/1532086293724346" width="900" height="1450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </div>
+      <div id="contact">
+        <div class="container">
+          <h3>Get in touch with 5045.</h3>
+          <p>Coach: <a href="mailto:wshsrobots@gmail.com">Laine Agee</a></p>
+          <p>Phone Number: (901) 416-8880</p>
+          <p>White Station High School<br>514 South Perkins Road<br>Memphis, Tennessee 38117</p>
+        </div>
+      </div>
 
-            <div id="sponsors">
-                <div class="container">
-                    <h3><span>Building world-class robots isn't easy, nor is it inexpensive.</span> <span>Our sponsors make everything possible.</span></h3>
-                    <p>Interested in helping to fund the next generation of leaders and problem solvers? A variety of sponsorship levels are available&mdash;please <a href="#/contact">contact&nbsp;us</a> for more information.</p>
-                    <hr>
-                    <div class="row">
-                        <div class="one-half column">
-                            <img class="u-max-full-width" src="img/qif.jpg">
-                            <p>Our dedication to personal service remains the cornerstone of our business philosophy as we deliver multi-faceted service to our customers. With the continued modernization of equipment, efficient fabrication processes, a capable and dedicated workforce and sound business practices, Quality Iron Fabricators stands poised to meet any needs our customers may have today and tomorrow.</p>
-                        </div>
-                        <div class="one-half column">
-                            <img class="u-max-full-width" src="img/swe.jpg">
-                            <p>For more than six decades, the Society of Woman Engineers has given women engineers a unique place and voice within the engineering industry. Our organization is centered around a passion for our members' success and continues to evolve with the challenges and opportunities reflected in today's exciting engineering and technology specialties.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="one-half column">
-                            <img class="u-max-full-width" src="img/scs.jpg">
-                            <p>Shelby County Schools—one of the 25 largest school districts in the nation—is located in Memphis, TN. We’re known for our great food, original music, professional sports, and high-quality arts in the most affordable urban setting in the nation. Not only that, but Memphis is a hotbed and national leader for groundbreaking work in public education and innovation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="contact">
-                <div class="container">
-                    <h3>Get in touch with 5045.</h3>
-                    <p>Coach: <a href="mailto:wshsrobots@gmail.com">Laine Agee</a>
-                    </p>
-                    <p>Phone Number: (901) 416-8880</p>
-                    <p>White Station High School
-                        <br>514 South Perkins Road
-                        <br>Memphis, Tennessee 38117</p>
-                </div>
-            </div>
-
-            <div id="resources">
-                <div class="container">
-                    <h3>Resources for 5045 team members.</h3>
-                    <p><a href="http://wshsrobots.wix.com/whitestationrobotics">Alternative Website</a>
-                    </p>
-                    <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wshsrobots%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style="width: 100%; border-width:0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                    <iframe src="https://docs.google.com/spreadsheets/d/178fLCA8Rah0PfJ_txi4WErMiZaJ1g-2ef8rX1wKwvX4/pubhtml?widget=true&amp;headers=false" height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wshsrobots%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FChicago " style="width: 100%; border-width:0; " width="800 " height="600 " frameborder="0 " scrolling="no "></iframe>
-           </div>
+      <div id="resources">
+        <div class="container">
+          <h3>Resources for 5045 team members.</h3>
+          <p><a href="http://wshsrobots.wix.com/whitestationrobotics">Alternative Website</a></p>
+          <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wshsrobots%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style="width: 100%; border-width:0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://docs.google.com/spreadsheets/d/178fLCA8Rah0PfJ_txi4WErMiZaJ1g-2ef8rX1wKwvX4/pubhtml?widget=true&amp;headers=false"height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wshsrobots%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style="width: 100%; border-width:0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
       </div>
 
     </div>
   </div>
-  <div class="footer ">
-    Copyright <span id="year ">2015</span> by Team 5045. All rights reserved.
+  <div class="footer">
+    Copyright <span id="year">2015</span> by Team 5045. All rights reserved.
   </div>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
-  <script src="js/index.js "></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
