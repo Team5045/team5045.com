@@ -87,7 +87,7 @@ p {
 }
 
 .fb-like-box, .fb-like-box span, .fb-like-box iframe {
-    width: 100% !important;
+    width: 33% !important;
     height: 400px !important;
 }
 
