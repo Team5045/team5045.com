@@ -85,11 +85,11 @@ p {
 .content > div {
     display: none;
 }
-<!-- 
+
 .fb-like-box, .fb-like-box span, .fb-like-box iframe {
     width: 100% !important;
     height: 400px !important;
-}-->
+}
 
 .footer, .wrapper:after {
     height: 35px; 
