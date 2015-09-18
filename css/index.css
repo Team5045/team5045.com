@@ -80,6 +80,10 @@ p {
     margin: auto;
 }
 
+.you-can-be-next {
+    font-style: italic;
+}
+
 .fb-page {
     width: 500px;
     max-width: 100%;
