@@ -77,12 +77,20 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    -moz-column-count: 4;
+    -moz-column-count: 2;
     -moz-column-gap: 10px;
-    -webkit-column-count: 4;
+    -webkit-column-count: 2;
     -webkit-column-gap: 10px;
-    column-count: 4;
+    column-count: 2;
     column-gap: 10px;
+}
+
+@media screen and (min-width: 750px) {
+    .team-list {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
 }
 
 .column img {
