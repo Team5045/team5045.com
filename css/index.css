@@ -42,16 +42,9 @@ p {
     letter-spacing: -0.05rem;
 }
 
-.hero .container .tagline {
-    font-size: 9.5vw;
-}
-
-.hero .container .tagline span {
-    font-weight: bold;
-}
-
-.hero .container .sub-tagline {
-    font-size: 3.5vw;
+.hero img {
+    width: 700px;
+    max-width: 80%;
 }
 
 .tabber .tabs {
@@ -73,6 +66,11 @@ p {
     opacity: 0.9;
 }
 
+.officers {
+    text-align: center;
+    font-size: 1.1em;
+}
+
 .team-list {
     list-style-type: none;
     padding: 0;
@@ -83,6 +81,7 @@ p {
     -webkit-column-gap: 10px;
     column-count: 2;
     column-gap: 10px;
+    text-align: center;
 }
 
 @media screen and (min-width: 750px) {
@@ -90,6 +89,11 @@ p {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
+    }
+
+    .officers {
+        text-align: center;
+        font-size: 1.3em;
     }
 }
 
