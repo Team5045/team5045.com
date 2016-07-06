@@ -66,9 +66,14 @@ p {
     opacity: 0.9;
 }
 
+#team .coming-soon {
+    text-align: center;
+}
+
 .officers {
     text-align: center;
     font-size: 1.1em;
+    margin-bottom: 12px;
 }
 
 .team-list {
@@ -95,6 +100,11 @@ p {
         text-align: center;
         font-size: 1.3em;
     }
+}
+
+#past-years .current-year-link {
+    margin-top: -14px;
+    margin-bottom: 24px;
 }
 
 .column img {
