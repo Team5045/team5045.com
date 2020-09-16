@@ -38,3 +38,28 @@ $( document ).ready( function () {
     $( window ).on( 'hashchange', hashChange );
     hashChange();
 } );
+
+//Interest Meeting Modal
+$( document ).ready(function (){
+ 
+    var modal = document.getElementById('modal');
+    var modalButton = document.getElementById('interestMeeting');
+    var closeButton = document.getElementsByClassName('closeButton')[0];
+
+    modalButton.addEventListener('click', openModal);
+    window.addEventListener('load', openModal);
+    closeButton.addEventListener('click', closeModal);
+    window.addEventListener('click', clickOutside);
+    
+    function openModal(){
+        modal.style.display = 'block';
+    }
+    function closeModal(){
+        modal.style.display = 'none';
+    }
+    function clickOutside(e){
+        if(e.target == modal){
+        modal.style.display = 'none';
+        }
+    }
+});
