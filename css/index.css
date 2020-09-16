@@ -211,3 +211,43 @@ p {
         display: block;
     }
 }
+/*Interest Meeting Modal*/
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalContent{
+    background-color: #545454;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    color: seashell;
+    animation-name: modalOpen;
+    animation-duration: 0.5s;
+    text-align: center;
+}
+
+.closeButton{
+    color: seashell;
+    float: right;
+    font-size: 30px;
+}
+
+.closeButton:hover,.closeButton:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalOpen{
+    from {opacity: 0}
+    to {opacity: 1}
+}
