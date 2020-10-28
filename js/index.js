@@ -40,7 +40,7 @@ $( document ).ready( function () {
 } );
 
 //Interest Meeting Modal
-$( document ).ready(function (){
+/* $( document ).ready(function (){
  
     var modal = document.getElementById('modal');
     var modalButton = document.getElementById('interestMeeting');
@@ -62,4 +62,4 @@ $( document ).ready(function (){
         modal.style.display = 'none';
         }
     }
-});
+}); */
