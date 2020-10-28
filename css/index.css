@@ -211,7 +211,7 @@ p {
         display: block;
     }
 }
-/*Interest Meeting Modal*/
+/*Interest Meeting Modal
 .modal{
     display:none;
     position: fixed;
@@ -250,4 +250,4 @@ p {
 @keyframes modalOpen{
     from {opacity: 0}
     to {opacity: 1}
-}
+} */
