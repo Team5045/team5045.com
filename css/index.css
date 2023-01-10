@@ -251,3 +251,6 @@ p {
     from {opacity: 0}
     to {opacity: 1}
 }
+.tab8 {
+    tab-size: 8;
+}
